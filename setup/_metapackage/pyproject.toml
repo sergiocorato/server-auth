@@ -1,7 +1,8 @@
 [project]
 name = "odoo-addons-oca-server-auth"
-version = "18.0.20241116.0"
+version = "18.0.20250103.0"
 dependencies = [
+    "odoo-addon-auth_admin_passkey==18.0.*",
     "odoo-addon-auth_api_key==18.0.*",
     "odoo-addon-auth_api_key_group==18.0.*",
     "odoo-addon-auth_api_key_server_env==18.0.*",
