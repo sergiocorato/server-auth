@@ -26,7 +26,7 @@ class SignupVerifyEmail(AuthSignupHome):
 
         # Check good format of e-mail
         try:
-            validate_email(values.get("login", ""))
+            validate_email(values.get("login", ""), check_deliverability=True)
         except EmailSyntaxError as error:
             qcontext["error"] = getattr(
                 error,
